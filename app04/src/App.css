@@ -1,0 +1,13 @@
+.card{
+  width: 400px;
+  height: 400px;
+}
+
+.moviebox {
+  display: flex;
+  column-gap: 15px;
+}
+
+a{
+  margin-right: 10px;
+}
