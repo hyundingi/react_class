@@ -7,8 +7,8 @@ import View from "../components/View";
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 
-const MemView = ({user}) => {
-    const [users, setUsers] = useState([]);
+const MemView = () => {
+    const [user, setUser] = useState([]);
     const params = useParams(); // parameter 값을 변수로 저장
     console.log("아이디 : "+params.id)
 
@@ -18,7 +18,7 @@ const MemView = ({user}) => {
         .then(
           response =>{
             console.log(response);
-            setUsers(response.data);
+            setUser(response.data);
           }
         )
       },[]
@@ -30,7 +30,7 @@ const MemView = ({user}) => {
       <Nav/>
       <h2>멤버상세보기</h2>
       <div className='moviebox'>
-       <View user={user} key={user}/>
+       <View user={user}/>
       </div>
 
 

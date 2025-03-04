@@ -7,10 +7,10 @@ const View = ({user}) => {
     <>
       <div className="card text-center">
         <div className="card-header">
-          아이디 : {user}
+          아이디 : {user.id}
         </div>
         <div className="card-body">
-          <h5 className="card-title">이름 : {user}</h5>
+          <h5 className="card-title">이름 : {user.name}</h5>
           <Link to="/MemList" className="btn btn-primary">Go List</Link>
         </div>
         <div className="card-footer text-body-secondary">
