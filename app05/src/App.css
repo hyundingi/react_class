@@ -1,0 +1,26 @@
+.card{
+  width: 400px;
+  height: 400px;
+}
+
+.moviebox {
+  display: flex;
+  column-gap: 15px;
+}
+
+a{
+  margin-right: 10px;
+}
+
+form{
+  margin-bottom: 40px;
+}
+
+h2{
+  text-align: center;
+}
+
+.App{
+  width: 1500px;
+  margin: 30px auto;
+}
